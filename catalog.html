@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия "Нёрдс"</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="header-logo" href="index.html">
+  	     <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Нёрдс">
+  	    </a>
+      	<ul class="site-navigation">
+      		<li><a href="#">Студия</a></li>
+      		<li><a href="#">Клиенты</a></li>
+      		<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+      		<li><a href="#">Контакты</a></li>
+      	</ul>
+      	<ul class="basket">
+        	<li class="basket">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+      <section class="sorting">
+      <h2>Сортировать:</h2>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По названию</li>
+          </ul>
+      </section>
+       
+      <section class="filters">
+        <h2 class="title-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="#">
+          <legend>Стоимость:</legend>
+          <input type="range" min="0" max="15000">
+          <fieldset>
+            <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option"><input type="radio" name="product-group" value="1" checked> Адаптивная</li>
+                <li class="filter-option"><input type="radio" name="product-group" value="2">Фиксированная</li>
+                <li class="filter-option"><input type="radio" name="product-group" value="3">Резиновая</li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option"><input type="checkbox" name="slider" checked>Слайдер</li>
+                <li class="filter-option"><input type="checkbox" name="features">Блок преимуществ</li>
+                <li class="filter-option"><input type="checkbox" name="news" checked>Новости</li>
+                <li class="filter-option"><input type="checkbox" name="gallery">Галерея</li>
+                <li class="filter-option"><input type="checkbox" name="basket">Корзина</li>
+              </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section class="catalog">
+        <h2 class="title-hidden">Каталог товаров</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="Sedona"></a></li>
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="PINK"></a></li>
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="Barbershop BORODINSKI"></a></li>
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="MISHKA"></a></li>
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="A+"></a></li>
+          <li class="catalog-item"><a href="#"><img src="http://placehold.it/150x100" alt="Кваст"></a></li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a herf="#">2</a></li>
+          <li class="pagination-item"><a herf="#">3</a></li>
+          <li class="pagination-item buttom"><a herf="#">Cледующая</a></li>
+        </ul>
+      </section>
+
+      <section class="modal write-us">
+        <h2>Напишите нам</h2>
+        <form class="write-us-form" action="#" method="post">
+          <p>
+          Ваше имя:
+          <input class="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+          Ваш e-mail:
+          <input class="email" type="text" name="mail" placeholder="Для отправки ответа">
+          </p>
+          <p>
+          Текст письма:
+          <textarea name="text" placeholder="В свобоной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <span class="modal-close">х</span>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
+    </footer>
+
+  </body>
+</html>
+
+
