@@ -1,120 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия "Нёрдс"</title>
   </head>
+
   <body>
+
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo">
-  	     <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Нёрдс">
+  	     <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
   	    </a>
-      	<ul class="site-navigaton">
-      		<li><a href="#">Студия</a></li>
-      		<li><a href="#">Клиенты</a></li>
-      		<li><a href="catalog.html">Магазин</a></li>
-      		<li><a href="#">Контакты</a></li>
+      	<ul class="site-navigation">
+      		<li>
+            <a href="#">Студия</a>
+          </li>
+      		<li>
+            <a href="#">Клиенты</a>
+          </li>
+      		<li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+      		<li>
+            <a href="#">Контакты</a>
+          </li>
       	</ul>
-      	<ul class="basket">
-        	<li class="basket">Корзина</li>
+      	<ul class="user-block">
+        	<li class="user-block">Корзина</li>
         </ul>
       </nav>
+
+      <section class="sliders">
+        <h2 class="title-hidden">Слайдер</h2>
+        <section class="slider-1">
+          <h2>Долго, дорого, скурпулезно</h2>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a href="#" class="button button-pink">Узнать больше</a>
+            <img src="img/nerds-index-slide1.png">
+        </section>
+        <section class="slider-2">
+          <h2>Любим математику как никто другой</h2>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a href="#" class="button button-pink">Узнать больше</a>
+            <img src="img/nerds-index-slide2.png">
+        </section>
+        <section class="slider-3">
+          <h2>Только ночь, только хардкор</h2>
+            <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#" class="button button-pink">Узнать больше</a>
+            <img src="img/nerds-index-slide3.png">
+        </section>
+      </section>
+
     </header>
      
     <main class="container">
       <h1 class="title-hidden">Дизайн-студия "Нёрдс"</h1>
-
-    <section class="slider">
-      <div class="slider-1">
-        <h2>Долго, дорого, скурпулезно</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a href="#" class="button button-pink">Узнать больше</a>
-        <img src="http://placehold.it/150x100">
-      </div>
-      <div class="slider-2">
-        <h2>Любим математику как никто другой</h2>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <a href="#" class="button button-pink">Узнать больше</a>
-        <img src="http://placehold.it/150x100">
-      </div>
-      <div class="slider-3">
-        <h2>Только ночь, только хардкор</h2>
-        <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="#" class="button button-pink">Узнать больше</a>
-        <img src="http://placehold.it/150x100">
-      </div>
-    </section>
-
-    <section class="features">
-      <h2 class="title-hidden">Особенности</h2>
-      	<ul class="features-list">
-      		<li class="features-item">
+      
+      <section class="features">
+        <h2 class="title-hidden">Особенности</h2>
+      	 <ul class="features-list">
+          <li class="features-item">
+            <img src="img/illustration-1.jpg">
       		  <h3>Веб-сайты</h3>
       		  <p>Мир никогда не будет прежним после того как увидите ваш сайт!</p>
       		  <a href="#" class="button button-pink">Заказать</a>
       		</li>
       		<li class="features-item">
+            <img src="img/illustration-2.jpg">
       		  <h3>Приложения</h3>
       		  <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       		  <a href="#" class="button button-green">Заказать</a>
       		</li>
       		<li class="features-item">
+            <img src="img/illustration-3.jpg">
       		  <h3>Презентации</h3>
       		  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
       		  <a href="#" class="button button-yellow">Заказать</a>
       		</li>
-      	</ul>
-    </section>
+      	 </ul>
+      </section>
 
     <section class="about-studio">
-      <h2 class="title-hidden">О студии</h2>
-      <p class="promo">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
+      <div class="column-1">
+        <h2 class="title-hidden">О студии</h2>
+          <p class="promo">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
       превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <h4>Выполняем заказы на разработку:</h4>
-      <ul>
-      	<li>Веб-сайтов любой сложности</li>
-      	<li>Мобильных приложений для iOS и Android</li>
-      	<li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="Нёрдс">
-      <h4>С 2004 года любим точность во всем:</h4>
-      <ul>
-      	<li>
-      		<b>146%</b>
-      		<p>Уровень самоотдачи</p>
-      	</li>
-      	<li>
-      		<b>100%</b>
-      		<p>Соблюдение сроков</p>
-      	</li>
-      	<li>
-      		<b>50%</b>
-      		<p>Минимальная предоплата</p>
-      	</li>
-      </ul>
+        <h4>Выполняем заказы на разработку:</h4>
+          <ul>
+      	   <li>Веб-сайтов любой сложности</li>
+      	   <li>Мобильных приложений для iOS и Android</li>
+      	   <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+      </div>
+      <div class="column-2">
+        <img src="img/nerds-illustration.jpg" alt="Нёрдс">
+        <h4>С 2004 года любим точность во всем:</h4>
+          <ul>
+            <li>
+              <b>146%</b>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <b>100%</b>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              <b>50%</b>    
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+      </div>
     </section>
 
     <section class="clients">
       <h2 class="title-hidden">Наши клиенты</h2>
     	<ul class="clients-list">
-    		<li class="clients-item"><a href="http://htmlacademy.ru"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a></li>
-    		<li class="clients-item"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Barbershop BORODINSKI"></a></li>
-    		<li class="clients-item"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a></li>
-    		<li class="clients-item"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="MISHKA"></a></li>
+    		<li class="clients-item">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-1.png" alt="HTML Academy">
+          </a>
+        </li>
+    		<li class="clients-item">
+          <a href="#">
+            <img src="img/logo-2.png" alt="Barbershop BORODINSKI">
+          </a>
+        </li>
+    		<li class="clients-item">
+          <a href="#">
+            <img src="img/logo-3.png" alt="Pink">
+          </a>
+        </li>
+    		<li class="clients-item">
+          <a href="#">
+            <img src="img/logo-4.png" alt="MISHKA">
+          </a>
+        </li>
     	</ul>
     </section>
 
     <section class="contacts">
       <h2 class="title-hidden">Контактная информация</h2>
-      <h4>Nёrds design studio</h4>
       <p>
+        <span>Nёrds design studio</span><br>
       	191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
       	тел. +7 (812) 275-75-75
       </p>
       <a class="button button-pink" href="#">Напишитие нам</a>
     </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <div class="slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </section>
+    </footer>
 
     <section class="modal write-us">
     <h2>Напишите нам</h2>
@@ -135,20 +187,6 @@
     <span class="modal-close">х</span>
     </form>
   </section>
-    </main>
-
-    <footer class="main-footer">
-      <section class="social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </section>
-    </footer>
-
 
   </body>
 </html>
