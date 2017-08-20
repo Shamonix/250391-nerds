@@ -29,12 +29,14 @@
           </li>
       	</ul>
       	<ul class="user-block">
-        	<li class="user-block">Корзина</li>
+        	<li class="user-block">
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
 
       <section class="sliders">
-        <h2 class="title-hidden">Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <section class="slider-1">
           <h2>Долго, дорого, скурпулезно</h2>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -58,10 +60,10 @@
     </header>
      
     <main class="container">
-      <h1 class="title-hidden">Дизайн-студия "Нёрдс"</h1>
+      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
       
       <section class="features">
-        <h2 class="title-hidden">Особенности</h2>
+        <h2 class="visually-hidden">Особенности</h2>
       	 <ul class="features-list">
           <li class="features-item">
             <img src="img/illustration-1.jpg">
@@ -86,7 +88,7 @@
 
     <section class="about-studio">
       <div class="column-1">
-        <h2 class="title-hidden">О студии</h2>
+        <h2 class="visually-hidden">О студии</h2>
           <p class="promo">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
       превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -100,25 +102,23 @@
       <div class="column-2">
         <img src="img/nerds-illustration.jpg" alt="Нёрдс">
         <h4>С 2004 года любим точность во всем:</h4>
-          <ul>
-            <li>
-              <b>146%</b>
-              <p>Уровень самоотдачи</p>
-            </li>
-            <li>
-              <b>100%</b>
-              <p>Соблюдение сроков</p>
-            </li>
-            <li>
-              <b>50%</b>    
-              <p>Минимальная предоплата</p>
-            </li>
-          </ul>
+          <dl>
+            <dt>146%</dt>
+            <dd>Уровень самоотдачи</dd>
+          </dl>
+          <dl>
+            <dt>100%</dt>
+            <dd>Соблюдение сроков</dd>
+          </dl>
+          <dl>
+            <dt>50%</dt>    
+            <dd>Минимальная предоплата</dd>
+          </dl>
       </div>
     </section>
 
     <section class="clients">
-      <h2 class="title-hidden">Наши клиенты</h2>
+      <h2 class="visually-hidden">Наши клиенты</h2>
     	<ul class="clients-list">
     		<li class="clients-item">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -144,7 +144,7 @@
     </section>
 
     <section class="contacts">
-      <h2 class="title-hidden">Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <p>
         <span>Nёrds design studio</span><br>
       	191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -155,38 +155,62 @@
     </main>
 
     <footer class="main-footer">
-      <section class="social">
+
+      
+
+      <div class="map">
+        <img src="img/map-marker.png">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+            <p>
+            <span>Nёrds design studio</span><br>
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            тел. +7 (812) 275-75-75
+            </p>
+            <a class="button button-pink" href="#">Напишитие нам</a>
+        </section>
+      </div>
+
+      <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#"><img src="img/vk-icon.svg">Вконтакте</a>
+          </li>
+          <li>  
+            <a class="social-button" href="#"><img src="img/fb-icon.svg">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/insta-icon.svg">Инстаграм</a>
+          </li>
         </ul>
+      </div>
+
         <div class="slogan">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
-      </section>
+       
     </footer>
 
     <section class="modal write-us">
-    <h2>Напишите нам</h2>
-    <form class="write-us-form" action="#" method="post">
-      <p>
-     Ваше имя:
-      <input class="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-    </p>
-    <p>
-    Ваш e-mail:
-      <input class="email" type="text" name="mail" placeholder="Для отправки ответа">
-    </p>
-    <p>
-    Текст письма:
-    <textarea name="text" placeholder="В свобоной форме"></textarea>
-    </p>
-    <button class="button" type="submit">Отправить</button>
-    <span class="modal-close">х</span>
-    </form>
-  </section>
+        <h2>Напишите нам</h2>
+        <form class="write-us-form" action="#" method="post">
+          <p class="username">
+          <label for="username">Ваше имя:</label>
+          <input id="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="email">
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="mail" placeholder="Для отправки ответа">
+          </p>
+          <p class="message">
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="text" placeholder="В свобоной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
+        </form>
+      </section>
 
   </body>
 </html>

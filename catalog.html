@@ -26,7 +26,9 @@
           </li>
       	</ul>
       	<ul class="user-blok">
-        	<li class="user-block">Корзина</li>
+        	<li class="user-block">
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
 
@@ -36,7 +38,7 @@
     <main class="container">
  
       <section class="filters">
-        <h2 class="title-hidden">Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="#">
           <fieldset>
             <legend>Стоимость:</legend>
@@ -46,13 +48,16 @@
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="radio" name="product-group" value="1" checked>Адаптивная
+                  <input id="filter-adaptive" type="radio" name="network" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input type="radio" name="product-group" value="2">Фиксированная
+                  <input id="filter-fixed" type="radio" name="network" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input type="radio" name="product-group" value="3">Резиновая
+                  <input id="filter-rubber" type="radio" name="network" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
           </fieldset>
@@ -60,19 +65,24 @@
             <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="checkbox" name="slider" checked>Слайдер
+                  <input id="filter-slider" type="checkbox" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="features">Блок преимуществ
+                  <input id="filter-features" type="checkbox" name="features">
+                  <label for="filter-features">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="news" checked>Новости
+                  <input id="filter-news" type="checkbox" name="news" checked>
+                  <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="gallery">Галерея
+                  <input id="filter-gallery" type="checkbox" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="basket">Корзина
+                  <input id="filter-basket" type="checkbox" name="basket">
+                  <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
           </fieldset>
@@ -81,49 +91,81 @@
       </section>
 
       <section class="catalog">
-        <h2 class="title-hidden">Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <div class="sorting">
-        <p>
-        Сортировать:
+          <b>Сортировать:</b>
           <ul>
             <li>По цене</li>
             <li>По типу</li>
             <li>По названию</li>
-            <li>Вверх</li>
-            <li>Вниз</li>
+            <li>
+              <span class="button-up">Вверх</span>
+            </li>
+            <li>
+              <span class="button-down">Вниз</span>
+            </li>
           </ul>
-        </p>
       </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-sedona.jpg" alt="Sedona">
             </a>
+            <div class="pop-up-item">
+              <b>Sedona</b>
+              <p>Информационный сайт для туристов</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-pink.jpg" alt="PINK">
             </a>
+            <div class="pop-up-item">
+              <b>Pink app</b>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-barbershop.jpg" alt="Barbershop BORODINSKI">
             </a>
+            <div class="pop-up-item">
+              <b>Barbershop</b>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-mishka.jpg" alt="MISHKA">
             </a>
+            <div class="pop-up-item">
+              <b>Mishka</b>
+              <p>Интернет-магазин вязанный игрушек</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-aplus.jpg" alt="A+">
             </a>
+            <div class="pop-up-item">
+              <b>A Plus</b>
+              <p>Лендинг курсов повышения квалификации</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-kvast.jpg" alt="Кваст">
             </a>
+            <div class="pop-up-item">
+              <b>Кваст</b>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <span class="buttun button-pink">9 900 руб.</span>
+            </div>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -141,39 +183,62 @@
           </li>
         </ul>
       </section>
+
     </main>
 
     <footer class="main-footer">
-      <section class="social">
+
+      <div class="map">
+        <img src="img/map-marker.png">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+            <p>
+            <span>Nёrds design studio</span><br>
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            тел. +7 (812) 275-75-75
+            </p>
+            <a class="button button-pink" href="#">Напишитие нам</a>
+        </section>
+      </div>
+
+      <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#"><img src="img/vk-icon.svg">Вконтакте</a>
+          </li>
+          <li>  
+            <a class="social-button" href="#"><img src="img/fb-icon.svg">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/insta-icon.svg">Инстаграм</a>
+          </li>
         </ul>
+      </div>
+
         <div class="slogan">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
-      </section>
+       
     </footer>
 
     <section class="modal write-us">
         <h2>Напишите нам</h2>
         <form class="write-us-form" action="#" method="post">
-          <p>
-          Ваше имя:
-          <input class="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <p class="username">
+          <label for="username">Ваше имя:</label>
+          <input id="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p>
-          Ваш e-mail:
-          <input class="email" type="text" name="mail" placeholder="Для отправки ответа">
+          <p class="email">
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="mail" placeholder="Для отправки ответа">
           </p>
-          <p>
-          Текст письма:
-          <textarea name="text" placeholder="В свобоной форме"></textarea>
+          <p class="message">
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="text" placeholder="В свобоной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
-          <span class="modal-close">х</span>
+          <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
 
