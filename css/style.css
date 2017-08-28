@@ -11,6 +11,11 @@ a {
 	text-decoration: none;
 }
 
+hr {
+	border: 2px solid black;
+	opacity: 0.2;
+}
+
 .visually-hidden {
 	display: none;
 }
@@ -66,8 +71,7 @@ a {
 	background-color: rgb(229, 167, 34);
 }
 
-header,
-.sliders {
+header {
 	background-color: rgb(238, 236, 236);
 }
 
@@ -403,4 +407,131 @@ fieldset {
 .pagination-item-current a {
 	background-color: #ffffff;
 	border: 2px solid #dbdbdb;
+}
+
+/*Сетка*/
+
+html,
+body {
+	min-width: 1200px;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.main-header {
+	min-height: 545px;
+	padding-top: 50px;
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.header-logo {
+	width: 160px;
+	height: 65px;
+}
+
+.site-navigation {
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+	width: 640px;
+	min-height: 65px;
+}
+
+.user-block {
+	margin: 0;
+	padding: 0;
+	min-height: 65px;
+}
+
+.features {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	min-height: 347px;
+}
+
+.features-item {
+	width: 300px;
+	min-height: 347px;
+}
+
+.about-studio {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.column-1 {
+	width: 660px;
+	min-height: 370px;
+}
+
+.column-2 {
+	width: 360px;
+	min-height: 370px;
+}
+
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.filters {
+	width: 260px;
+	min-height: 2095px;
+}
+
+.catalog {
+	width: 760px;
+	min-height: 2095px;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	width: 360px;
+	min-height: 615px;
+	margin-bottom: 35px;
+	margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.pop-up-item {
+	width: 360px;
+	min-height: 230px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	min-height: 50px;
 }
