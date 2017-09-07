@@ -2,21 +2,21 @@
 	font-family: "Roboto Regular";
 	src:
 		local("Roboto Regular"),
-		url("/nerds/fonts/web/roboto.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Roboto Bold";
-	src:
-		local("Roboto Bold"),
-		url("/nerds/fonts/web/robotobold.woff") format("woff");
+		url("../fonts/web/roboto.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Roboto Medium";
 	src:
 	local("Roboto Medium"),
-	url("/nerds/fonts/web/robotomedium.woff") format("woff");
+	url("../fonts/web/robotomedium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Roboto Bold";
+	src:
+		local("Roboto Bold"),
+		url("../fonts/web/robotobold.woff") format("woff");
 }
 
 html, 
@@ -341,7 +341,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 80px;
 	width: 1100px;
 	list-style: none;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
@@ -409,7 +409,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 40px;
 	padding-bottom: 70px;
 	width: 1160px;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .promo {
@@ -425,24 +425,17 @@ input[type="radio"].visually-hidden {
 }
 
 .promo span {
+	display: inline-block;
 	padding-top: 25px;
 	padding-bottom: 5px;
 	font-weight: bold;
-	display: inline-block;
-}
-
-.info {
-	width: 380px;
+	text-transform: uppercase;
 }
 
 .promo b {
 	font-family: "Roboto Medium", "Arial", sans-serif;
 	font-size: 45px;
 	line-height: 45px;
-}
-
-.promo span {
-	text-transform: uppercase;
 }
 
 .orders-list {
@@ -470,6 +463,10 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 }
 
+.info {
+	width: 380px;
+}
+
 .info img {
 	margin-bottom: 40px;
 }
@@ -481,10 +478,11 @@ input[type="radio"].visually-hidden {
 }
 
 .info-table caption {
-	text-transform: uppercase;
-	text-align: center;
 	padding-top: 4px;
 	padding-bottom: 46px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .info-table tr {
@@ -511,7 +509,20 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	width: 1160px;
 	list-style: none;
-  	border-bottom: 1px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.clients-item {
+	margin-top: 50px;
+	margin-bottom: 45px;
+	width: 260px;
+	height: 85px;
+	text-align: center;
+	border-left: 2px solid #eeeeee;
+}
+
+.clients-item:nth-child(1) {
+	border: none;
 }
 
 .clients a {
@@ -694,10 +705,6 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-.filter-input-radio[value="rubber"] ~ label::before {
-	display: none;
-}
-
 .filter-input-checkbox ~ label::before {
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
@@ -842,12 +849,6 @@ input[type="radio"].visually-hidden {
 	opacity: 0.12;
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
-	border: 1px solid rgba(77, 77, 77, 0.1);
-	box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
-}
-
 .catalog-item:hover a::before,
 .catalog-item:focus a::before {
 	opacity: 1;
@@ -873,8 +874,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 10px;
 	font-size: 18px;
 	line-height: 30px;
-	text-transform: uppercase;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .catalog-item-info p {
@@ -1084,10 +1085,12 @@ input[type="radio"].visually-hidden {
 .modal {
 	display: none;
 	position: fixed;
-	width: 780px;
+	margin: 0;
 	padding-top: 75px;
 	padding-left: 100px;
+	padding-right: 100px;
 	padding-bottom: 85px;
+	width: 760px;
 	background-color: white;
 	box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1095,11 +1098,12 @@ input[type="radio"].visually-hidden {
 .modal-close {
 	position: absolute;
 	top: 80px;
-	right: 90px;
+	right: 100px;
 	width: 20px;
 	height: 20px;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .modal-close img {
@@ -1119,19 +1123,33 @@ input[type="radio"].visually-hidden {
 	top: 80px;
 	left: 50%;
 	width: 760px;
-	margin-left: -470px;
+	margin-left: -440px;
 	padding: 75px 100px;
 }
 
 .write-us h2 {
 	margin: 0;
 	margin-bottom: 20px;
+	padding: 0;
 	font-size: 45px;
 	line-height: 45px;
 	color: #000000;
 }
 
+.write-us-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.form-item {
+	width: 360px;
+}
+
 .write-us-form label {
+	display: inline-block;
+	margin-bottom: 10px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #000000;
@@ -1139,14 +1157,28 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us-form input {
+	display: inline-block;
+	width: 345px;
+	height: 45px;
 	font: inherit;
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 }
- .write-us-form input:hover {
+
+.write-us-form textarea {
+	width: 760px;
+	height: 115px;
+}
+.write-us-form input:hover {
  	border-color: #b4b9bb;
  }
 
 .write-us-form input:focus {
 	border-color: #000000;
 }
+
+.write-us-form .button {
+	width: 260px;
+	height: 50px;
+}
+
