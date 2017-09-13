@@ -27,6 +27,8 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+        <legend>Стоимость:</legend>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -40,6 +42,7 @@
             <label class="max-price">до<input type="text" name="max-price" value="15000"></label>
           </div>
         </div>
+        </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
           <ul class="filter-grid">
@@ -82,12 +85,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button filter-button">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
       </form>
     </section>
     
-    <div class="catalog-column">
-    <section class="sort">
+    <section class="catalog-column">
+      <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
@@ -170,7 +173,7 @@
           <li class="pagination-item"><a href="#" title="Третья страница">3</a></li>
           <li class="pagination-item"><a href="#" title="Следующая страница">Следующая</a></li>
       </ul>
-    </div>
+    </section>
   </main>
 
     <footer class="main-footer">
@@ -206,7 +209,7 @@
           <label for="email">Ваш e-mail:</label>
           <input id="email" type="text" name="mail" placeholder="Для отправки ответа">
           </p>
-          <p class="form-item">
+          <p class="message-field">
           <label for="message">Текст письма:</label>
           <textarea id="message" name="text" placeholder="В свобоной форме"></textarea>
           </p>
@@ -216,52 +219,7 @@
         </form>
     </section>
     
-    <script>
-      var link = document.querySelector(".footer-button");
-      var popup = document.querySelector(".write-us");
-      var close = popup.querySelector(".modal-close");
-      var form = popup.querySelector("form");
-      var username = popup.querySelector("[name=name]");
-      var email = popup.querySelector("[name=mail]");
-      var storage = localStorage.getItem("username");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        if (storage) {
-          username.value = storage;
-          email.focus();
-        } else {
-          username.focus();
-        }
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      });
-
-      form.addEventListener("submit", function (evt){
-        if (!username.value || !email.value) {
-        evt.preventDefault();
-        console.log("Нужно ввести имя и электронную почту");
-        popup.classList.add("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        } else {
-          localStorage.setItem("username", username.value);
-        }
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
-    </script>
+    <script src="js/modalform.js"></script>
   </body>
 </html>
 
