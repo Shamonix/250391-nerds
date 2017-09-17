@@ -35,6 +35,7 @@ a {
 }
 
 .button {
+	display: block;
 	padding: 18px 0;
 	width: 160px;
 	font-family: "Roboto Medium", "Arial", sans-serif;
@@ -102,7 +103,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 50px;
 	padding-right: 20px;
 	padding-bottom: 35px;
 	padding-left: 20px;
@@ -138,6 +139,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation a:active {
+	color: #000000;
 	opacity: 0.3;
 }
 
@@ -171,14 +173,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-title {
 	margin: 0;
-	padding: 0;
-	padding-top: 70px;
-	padding-bottom: 105px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 1160px;
+	margin-bottom: 60px;
+	padding-top: 35px;
+	padding-bottom: 109px;
+	width: 100%;
 	font-family: "Roboto Medium", "Arial", sans-serif;
 	font-size: 55px;
 	line-height: 55px;
@@ -214,7 +212,7 @@ input[type="radio"].visually-hidden {
 .slider-title {
 	margin: 0;
 	padding: 0;
-	padding-top: 50px;
+	padding-top: 35px;
 	padding-bottom: 13px;
 	font-family: "Roboto Medium", "Arial", sans-serif;
 	font-size: 55px;
@@ -258,7 +256,7 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
 	display: inline-block;
-	margin-bottom: 80px;
+	margin-bottom: 75px;
 	padding-top: 17px;
 	padding-bottom: 17px;
 	width: 240px;
@@ -336,7 +334,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	margin-right: 60px;
-	padding-top: 80px;
+	padding-top: 75px;
 	padding-bottom: 80px;
 	width: 1100px;
 	list-style: none;
@@ -352,7 +350,7 @@ input[type="radio"].visually-hidden {
 .features-item-title {
 	margin: 0;
 	padding: 0;
-	padding-top: 28px;
+	padding-top: 20px;
 	padding-bottom: 11px;
 	font-family: "Roboto Bold", "Arial", sans-serif;
 	font-size: 24px;
@@ -363,8 +361,13 @@ input[type="radio"].visually-hidden {
 .features-item p {
 	margin: 0;
 	padding: 0;
-	padding-top: 11px;
-	padding-bottom: 34px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	width: 260px;
+}
+
+.features-button {
+	height: 50px;
 }
 
 .features-item .button-green {
@@ -420,8 +423,9 @@ input[type="radio"].visually-hidden {
 .promo p {
 	margin: 0;
 	padding: 0;
-	padding-top: 17px;
+	padding-top: 10px;
 	padding-bottom: 17px;
+	width: 660px;
 }
 
 .promo .orders {
@@ -453,7 +457,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	padding-left: 37px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .orders-item::before {
@@ -469,25 +473,30 @@ input[type="radio"].visually-hidden {
 
 .info {
 	width: 380px;
+	height: 410px;
 }
 
 .info img {
+	margin-left: 25px;
 	margin-bottom: 40px;
 }
 
 .info-table {
-	padding: 0;
 	margin: 0;
+	margin-left: 25px;
+	padding: 0;
+	width: 360px;
 	border-spacing: 10px;
 }
 
 .info-table caption {
-	padding-top: 4px;
-	padding-bottom: 46px;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 24px;
 	font-family: "Roboto Bold", "Arial", sans-serif;
-	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: center;	
 }
 
 .info-table tr {
@@ -513,6 +522,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	width: 1160px;
+	height: 180px;
 	list-style: none;
 	border-bottom: 2px solid #eeeeee;
 }
@@ -551,18 +561,21 @@ input[type="radio"].visually-hidden {
 
 .catalog-container {
 	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
 	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: -50px;
+	padding: 0;
 	width: 1160px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 55px;
 }
 
 /*Фильтры*/
 
 .filter {
+	margin-top: 40px;
+	margin-left: -11px;
+	margin-right: 115px;
 	width: 260px;
 }
 
@@ -572,12 +585,29 @@ input[type="radio"].visually-hidden {
 
 .filter fieldset {
 	margin: 0;
-	margin-top: 50px;
+	margin-left: 10px;
 	padding: 0;
 }
 
+.filter legend {
+	margin: 0;
+	margin-bottom: -5px;
+	padding: 0;
+	width: 260px;
+}
+
+.filter fieldset:nth-child(2) {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.filter fieldset:nth-child(3) {
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
 .range-filter {
-	padding-top: 45px;
+	padding-top: 20px;
 	width: 260px;
 }
 
@@ -665,15 +695,14 @@ input[type="radio"].visually-hidden {
 	padding-top: 8px;
 }
 
-.filter-option {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 35px;
-}
-
 .filter fieldset, 
 .sort fieldset {
 	border: none;
+}
+
+.filter legend {
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .filter legend, 
@@ -686,8 +715,19 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
 	position: relative;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 35px;
 	line-height: 20px;
 	color: #283136;
+}
+
+.filter-option label {
+	margin: 0;
+	margin-bottom: 2px;
+	color: black;
+	width: 265px;
+	white-space: nowrap;	
 }
 
 .filter-option label::before {
@@ -751,17 +791,18 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button:active {
-	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
-	box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1);
+	color: #959595;
+	-webkit-box-shadow: 0 3px 0 0 #bfbfbf inset;
+	box-shadow: 0 3px 0 0 #bfbfbf inset;
 }
 
 .sorting-items {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	margin-top: 55px;
-	margin-left: 40px;
+	margin-top: 40px;
+	margin-left: 5px;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #b2b2b2;
@@ -852,7 +893,7 @@ input[type="radio"].visually-hidden {
 /*Каталог товаров*/
 
 .catalog {
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 20px;
 }
 
@@ -863,8 +904,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	width: 760px;
-	list-style: none;
-	
+	list-style: none;	
 }
 
 .catalog-item {
@@ -874,7 +914,7 @@ input[type="radio"].visually-hidden {
 	height: 576px;
 }
 
-.catalog-item a::before {
+.catalog-item::before {
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -888,8 +928,8 @@ input[type="radio"].visually-hidden {
 	opacity: 0.12;
 }
 
-.catalog-item:hover a::before,
-.catalog-item:focus a::before {
+.catalog-item:hover::before,
+.catalog-item:focus::before {
 	opacity: 1;
 }
 
@@ -905,6 +945,7 @@ input[type="radio"].visually-hidden {
 	bottom: 0;
 	left: 0;
 	background-color: #eeeeee;
+	box-shadow: 0 5px 50px -3px rgba(0, 0, 0, 0.4); 
 }
 
 .catalog-item-info-title {
@@ -933,7 +974,6 @@ input[type="radio"].visually-hidden {
 	margin-right: 20px;
 	margin-left: 20px;
 	width: 200px;
-	height: 50px;
 	font-family: "Roboto Medium", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -970,7 +1010,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #eeeeee;
-	border-radius: 5%;
+	border-radius: 3px;
 }
 
 .pagination-item:last-child a {
@@ -999,23 +1039,11 @@ input[type="radio"].visually-hidden {
 
 /*Футер*/
 
-.map {
-	position: relative;
-	padding-top: 30px;
-	padding-bottom: 35px;
-}
-
-.map img {
-	margin: 0 auto;
-	width: 100%;
-	z-index: 0;
-}
-
 .contacts {
 	position: absolute;
 	width: 220px;
 	height: 210px;
-	top: 80px;
+	top: 60px;
 	left: 370px;
 	padding: 50px;
 	background-color: white;
@@ -1048,11 +1076,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-button {
-	width: 100%;
-	height: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 30px;
+	margin-top: 37px;
+	padding: 16px 0;
+	width: 220px;
 }
 
 .map .marker {
@@ -1062,15 +1088,27 @@ input[type="radio"].visually-hidden {
 	left: 1100px;
 }
 
+.map {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+.map img {
+	margin: 0 auto;
+	width: 100%;
+	z-index: 0;
+}
+
 .social {
 	display: flex;
-	width: 1160px;
-	padding-top: 35px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 70px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 70px;
+	width: 1160px;
 }
 
 .social-list {
@@ -1202,7 +1240,6 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 18px;
 	color: #000000;
-	font-weight: bold;
 }
 
 .write-us-form input {
@@ -1212,6 +1249,7 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 	background-color: transparent;
 	border: 2px solid #d7dcde;
+	border-radius: 3px;
 }
 .message-field {
 	width: 760px;
@@ -1220,13 +1258,22 @@ input[type="radio"].visually-hidden {
 .write-us-form textarea {
 	width: 760px;
 	height: 115px;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
 }
-.write-us-form input:hover {
+.write-us-form input:hover,
+.write-us-form textarea:hover {
 	border-color: #b4b9bb;
  }
 
-.write-us-form input:focus {
+.write-us-form input:focus,
+.write-us-form textarea:focus {
 	border-color: #000000;
+}
+
+.write-us-form input.invalid {
+	border-color: #e74246;
+	color: #e74246;
 }
 
 .write-us-form .button {
