@@ -130,15 +130,14 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="map">
+      <section class="map-and-contacts">
         <div class="contacts">
           <p ><b>Nёrds design studio</b></p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <button class="button footer-button">Напишите нам</button>
+          <p class="phone">тел. +7 (812) 275-75-75</p>
+          <a class="button footer-button" href="#">Напишите нам</a>
         </div>
         <img class="marker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
-        <img src="img/map.jpg" width="1440" height="415" alt="Наше расположение на карте">
       </section>
       <section class="social">
         <ul class="social-list">
@@ -161,21 +160,21 @@
         <form class="write-us-form" action="#" method="post">
           <p class="form-item">
           <label for="username">Ваше имя:</label>
-          <input id="username" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <input id="username" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
           </p>
           <p class="form-item">
           <label for="email">Ваш e-mail:</label>
-          <input id="email" type="text" name="mail" placeholder="Для отправки ответа">
+          <input id="email" type="text" name="mail" placeholder="Для отправки ответа" required>
           </p>
           <p class="message-field">
           <label for="message">Текст письма:</label>
-          <textarea id="message" name="text" placeholder="В свобоной форме"></textarea>
+          <textarea id="message" name="text" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
           <button class="modal-close" type="button">
           <img src="img/close-cross.svg" width="32" height="21" alt="Закрыть"></button>
         </form>
     </section>
-    <script src="js/modalform.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
